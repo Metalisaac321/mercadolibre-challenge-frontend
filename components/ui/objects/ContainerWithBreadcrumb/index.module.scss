@@ -1,0 +1,6 @@
+@use "@styles/settings/_variables.scss";
+@use "@styles/tools/_mixins.scss";
+
+.container {
+  @include mixins.flexColumnWithRowGap(variables.$spacing-s);
+}
