@@ -1,0 +1,46 @@
+@use "@styles/settings/_variables.scss";
+@use "@styles/tools/_mixins.scss";
+
+$_search-container-height: 2.5rem;
+
+.header {
+  @include mixins.flexRowWithColumnGap(variables.$spacing);
+  align-items: center;
+  padding: 0.6rem variables.$spacing-4xl;
+  background-color: variables.$primary-color;
+
+  img {
+    cursor: pointer;
+  }
+
+  &SearchContainer {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    &Input {
+      border-radius: variables.$border-radius 0 0 variables.$border-radius;
+      height: $_search-container-height;
+      outline: none;
+      border: none;
+      flex-grow: 1;
+      padding: 0 variables.$spacing-s;
+      color: variables.$text-black-color;
+      font-size: 1rem;
+      &::placeholder {
+        opacity: 0.6;
+      }
+    }
+
+    &ImageContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: variables.$background-lighter-color;
+      height: $_search-container-height;
+      width: $_search-container-height;
+      cursor: pointer;
+      border-radius: 0 variables.$border-radius variables.$border-radius 0;
+    }
+  }
+}
