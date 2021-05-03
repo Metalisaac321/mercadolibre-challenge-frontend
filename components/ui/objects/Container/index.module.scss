@@ -1,0 +1,6 @@
+@use "@styles/settings/_variables.scss";
+
+.container {
+  background-color: variables.$background-white-color;
+  padding: variables.$spacing-s;
+}
