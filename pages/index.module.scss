@@ -1,0 +1,5 @@
+@use "@styles/settings/_variables.scss";
+
+.appContainerMain {
+  padding: 0 variables.$spacing-4xl;
+}
