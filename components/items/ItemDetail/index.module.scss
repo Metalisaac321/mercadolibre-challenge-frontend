@@ -1,0 +1,41 @@
+@use "@styles/settings/_variables.scss";
+@use "@styles/tools/_mixins.scss";
+
+.itemDetail {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  row-gap: variables.$spacing-3xl;
+
+  &PictureSection {
+    justify-self: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &PriceSection {
+    margin-top: variables.$spacing;
+    justify-self: flex-end;
+    padding-right: variables.$spacing;
+
+    p {
+      margin-bottom: variables.$spacing-s;
+      color: variables.$text-black-color;
+    }
+    h3,
+    h1 {
+      margin-bottom: variables.$spacing;
+    }
+  }
+
+  &DescriptionSection {
+    padding-left: variables.$spacing;
+
+    p {
+      padding: variables.$spacing 0;
+      font-size: variables.$fs-item-description;
+    }
+  }
+}
