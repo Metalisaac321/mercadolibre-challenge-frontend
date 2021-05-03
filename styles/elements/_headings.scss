@@ -1,0 +1,23 @@
+@use "../settings/variables";
+
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.13;
+  color: variables.$text-black-color;
+  margin: 0;
+}
+
+h1 {
+  font-size: variables.$fs-title-l;
+}
+
+h2 {
+  font-size: variables.$fs-title-m;
+}
+
+h3 {
+  font-size: variables.$fs-title-s;
+  font-weight: 600;
+}

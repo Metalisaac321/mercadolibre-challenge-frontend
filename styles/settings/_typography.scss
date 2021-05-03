@@ -1,0 +1,19 @@
+$font-family: 'Open Sans', sans-serif;
+// Typography scale
+$_fs-12: 0.75rem;
+$_fs-14: 0.875rem;
+$_fs-16: 1rem;
+$_fs-18: 1.125rem;
+$_fs-24: 1.5rem;
+$_fs-28: 1.75rem;
+$_fs-46: 2.875rem;
+
+// Typography applications
+$fs-body: $_fs-14;
+$fs-item-title: $_fs_18;
+$fs-item-description: $_fs_16;
+$fs-state-name: $_fs-12;
+$fs-title-s: $_fs-24;
+$fs-title-m: $_fs-28;
+$fs-title-l: $_fs-46;
+$fs-btn: $_fs-16;
