@@ -1,0 +1,6 @@
+@use "@styles/settings/_variables.scss";
+
+.divider {
+  border-bottom: 0.1rem solid variables.$border-light-color;
+  margin: 0 variables.$spacing-s;
+}
