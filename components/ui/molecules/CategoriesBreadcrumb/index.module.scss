@@ -1,0 +1,13 @@
+@use "@styles/settings/_variables.scss";
+@use "@styles/tools/_mixins.scss";
+
+.categoriesBreadcrumb {
+  @include mixins.flexRowWithColumnGap(0.3rem);
+  display: flex;
+  align-items: center;
+
+  &Icon {
+    height: 1em;
+    width: 1em;
+  }
+}

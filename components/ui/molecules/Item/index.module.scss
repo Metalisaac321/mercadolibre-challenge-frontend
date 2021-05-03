@@ -1,0 +1,50 @@
+@use "@styles/settings/_variables.scss";
+@use "@styles/tools/_mixins.scss";
+
+.item {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  cursor: pointer;
+
+  transition: all;
+  &:hover {
+    background-color: variables.$background-lightest-color;
+  }
+
+  &ThumbnailSection {
+    border-radius: variables.$border-radius;
+    height: 13.25rem;
+    width: 13.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: variables.$spacing-s variables.$spacing-s;
+
+    img {
+      width: 11.25rem;
+      height: 11.25rem;
+    }
+  }
+
+  &InfoSection {
+    @include mixins.flexColumnWithRowGap(variables.$spacing);
+    justify-content: center;
+
+    &Price {
+      @include mixins.flexRowWithColumnGap(variables.$spacing-s);
+      align-items: center;
+    }
+
+    &Title {
+      font-size: variables.$fs-item-title;
+      color: variables.$text-black-color;
+    }
+  }
+
+  &StateName {
+    font-size: variables.$fs-state-name;
+    margin-top: variables.$spacing-xl;
+    flex: 1;
+    text-align: center;
+  }
+}
