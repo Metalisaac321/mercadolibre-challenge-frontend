@@ -1,5 +1,5 @@
-## Description
-MercadoLibre challenge: Frontend
+# MercadoLibre challenge: Frontend
+Created With ReactJS + NextJS using Atomic Design; and testing library for testing.
 
 ## Installation
 ```bash
