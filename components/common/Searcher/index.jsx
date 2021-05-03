@@ -2,9 +2,10 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './index.module.scss';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Searcher = ({ onChange, value, onSearch }) => {
+  const router = useRouter()
   const handleOnKeyPress = (event) => {
     if (event.key === 'Enter') {
       onSearch();
@@ -12,15 +13,14 @@ const Searcher = ({ onChange, value, onSearch }) => {
   };
   return (
     <header className={styles.header}>
-      <Link href="/">
         <Image
           src="/logo_ml.png"
           alt="Mercado libre logo"
           layout="fixed"
           width={60}
           height={40}
+          onClick={() => router.push('/')}
         />
-      </Link>
       <div className={styles.headerSearchContainer}>
         <input
           className={styles.headerSearchContainerInput}
